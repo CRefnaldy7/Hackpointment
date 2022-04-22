@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+     <head>
+          <meta charset="utf-8" />
+          <title></title>
+          <link rel="stylesheet" href="./index.css" />
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.4.6/tailwind.min.css" />
+
+     </head>
+
+     <body>
+          <div class="w-screen h-screen flex justify-center items-center">
+               <!-- card -->
+               <div class="w-1/2 rounded-lg shadow-xl p-10">
+                    <div>
+                         <div>
+                              <h1 class="text-4xl font-bold">List Janji</h1>
+                         </div>
+                         <!-- nomor,nama,dokter,jam ,hari -->
+                         <div class="mt-8">
+                              <table id="table" class="table-auto w-full">
+                                   <thead>
+                                        <tr>
+                                             <th>No</th>
+                                             <th>Nama</th>
+                                             <th>Dokter</th>
+                                             <th>Jam</th>
+                                             <th>Hari</th>
+                                        </tr>
+                                   </thead>
+                                   <tbody id="table-body">
+
+                                   </tbody>
+                              </table>
+                              <a href="home.html"><button class="font-bold w-full bg-secondary text-white px-3 py-1 rounded-lg mt-4">Back</button></a>
+                         </div>
+                    </div>
+               </div>
+          </div>
+
+     <script src="listJanji.js"></script>
+     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+     </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+     <head>
+          <meta charset="utf-8" />
+          <title></title>
+          <link rel="stylesheet" href="./index.css" />
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.4.6/tailwind.min.css" />
+     </head>
+
+     <body>
+          <!-- navbar -->
+          <nav class="bg-secondary shadow-lg">
+               <div class="container mx-auto">
+                    <div class="sm:flex justify-around">
+                         <!-- logo -->
+                         <a href="#" class="text-white text-3xl font-bold p-3">Hackpointmen</a>
+
+                         <!-- Menu  -->
+                         <ul class="text-gray-400 sm:self-center text-xl border-t sm:border-none">
+                              <li class="sm:inline-block">
+                                   <a href="home.html" class="p-3 hover:text-white">Home</a>
+                              </li>
+                              <li class="sm:inline-block">
+                                   <a href="delete.html" class="p-3 text-white">List Delete</a>
+                              </li>
+                              <li class="sm:inline-block">
+                                   <a href="listJanji.html" class="p-3 hover:text-white">List Appointment</a>
+                              </li>
+                         </ul>
+                    </div>
+               </div>
+          </nav>
+          <div class="w-screen h-screen flex justify-center items-center">
+               <!-- card -->
+               <div class="w-1/4 rounded-lg shadow-xl p-10">
+                    <div class="pb-3 mb-2 md:pb-0 md:mb-0 md:h-auto"></div>
+                    <div class="my-auto">
+                         <h1 class="text-4xl font-bold flex justify-center items-center">Appointment</h1>
+                         <div class="grid grid-cols-4 gap-4 flex ml-3 my-3 mt-3">
+                              <h3 class="text-2x1 font-bold">Nama:</h3>
+                              <span id="nama">Contoh</span>
+                         </div>
+                         <div class="grid grid-cols-4 gap-4 flex ml-3 my-3 mt-3">
+                              <h3 class="text-2x1 font-bold">Umur:</h3>
+                              <span id="umur">asfasgfd</span>
+                         </div>
+                         <div class="grid grid-cols-4 gap-4 flex ml-3 my-3 mt-3">
+                              <h3 class="text-2x1 font-bold">Hari:</h3>
+                              <span id="hari">fadfadga</span>
+                         </div>
+                         <div class="grid grid-cols-4 gap-4 flex ml-3 my-3 mt-3">
+                              <h3 class="text-2x1 font-bold">Jam:</h3>
+                              <span id="jam">adggadg</span>
+                         </div>
+                         <div class="grid grid-cols-4 gap-4 flex ml-3 my-3 mt-3">
+                              <h3 class="text-2x1 font-bold">Dokter:</h3>
+                              <span id="dokter">dgadh</span>
+                         </div>
+                         <a href="home.html"><button class="font-bold w-full bg-secondary text-white px-44 py-1 rounded-lg mt-4">OK</button></a>
+                    </div>
+               </div>
+          </div>
+     <script src="appInfo.js"></script>
+     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+     </body>
+</html>

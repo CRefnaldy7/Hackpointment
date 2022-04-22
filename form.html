@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+     <head>
+          <meta charset="utf-8" />
+          <title></title>
+          <link rel="stylesheet" href="./index.css" />
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.4.6/tailwind.min.css" />
+     </head>
+
+     <body>
+          <!-- navbar -->
+          <nav class="bg-secondary shadow-lg">
+               <div class="container mx-auto">
+                    <div class="sm:flex justify-around">
+                         <!-- logo -->
+                         <a href="#" class="text-white text-3xl font-bold p-3">Hackpointmen</a>
+
+                         <!-- Menu  -->
+                         <ul class="text-gray-400 sm:self-center text-xl border-t sm:border-none">
+                              <li class="sm:inline-block">
+                                   <a href="home.html" class="p-3 text-white">Home</a>
+                              </li>
+                              <li class="sm:inline-block">
+                                   <a href="delete.html" class="p-3 hover:text-white">List Delete</a>
+                              </li>
+                              <li class="sm:inline-block">
+                                   <a href="listJanji.html" class="p-3 hover:text-white">List Appointment</a>
+                              </li>
+                         </ul>
+                    </div>
+               </div>
+          </nav>
+          <div class="w-screen h-screen flex justify-center items-center">
+               <!-- card -->
+               <div class="w-1/4 rounded-lg shadow-xl p-10 md:flex">
+                    <div class="border-b pb-3 mb-2 md:pb-0 md:mb-0 md:h-auto"></div>
+                    <div class="md:p-auto my-auto">
+                         <h1 class="text-4xl font-bold flex justify-center items-center">Buat Janji</h1>
+                         <span class="text-sm">Nama</span>
+                         <input id="nama" type="text" class="w-full border bg-accent px-4 py-1 rounded-lg" />
+                         <span class="text-sm">Umur</span>
+                         <input id="umur"  type="text" class="w-full border bg-accent px-4 py-1 rounded-lg" />
+                         <span class="text-sm">Spesialis</span>
+                         <select id="spesialis" class="w-full border bg-accent px-4 py-1 rounded-lg">
+                              <option value="">Spesialis</option>
+                              <option value="Dokter Umum">Dokter Umum</option>
+                              <option value="Dokter Gigi">Dokter Gigi</option>
+                              <option value="Spesialis Anak">Spesialis Anak</option>
+                              <option value="Bedah Umum">Bedah Umum</option>
+                              <option value="Spesialis Kandungan">Spesialis Kandungan</option>
+                         </select>
+                         <span class="text-sm">Hari</span>
+                         <select id="hari" class="w-full border bg-accent px-4 py-1 rounded-lg">
+                              <option value="">Pilih Hari</option>
+                              <option value="Senin">Senin</option>
+                              <option value="Selasa">Selasa</option>
+                              <option value="Rabu">Rabu</option>
+                              <option value="Kamis">Kamis</option>
+                              <option value="Jumat">Jumat</option>
+                              <option value="Sabtu">Sabtu</option>
+                              <option value="Minggu">Minggu</option>
+                         </select>
+                         <span class="text-sm">Jam</span>
+                         <select id="jam" class="w-full border bg-accent px-4 py-1 rounded-lg">
+                              <option value="">Pilih Jam</option>
+                              <option value="8">8:00</option>
+                              <option value="9">9:00</option>
+                              <option value="10">10:00</option>
+                              <option value="11">11:00</option>
+                              <option value="12">12:00</option>
+                              <option value="13">13:00</option>
+                              <option value="14">14:00</option>
+                              <option value="15">15:00</option>
+                              <option value="16">16:00</option>
+                              <option value="17">17:00</option>
+                         </select>
+                         <button id="form-button" class="font-bold w-full bg-secondary text-white px-3 py-1 rounded-lg mt-4">Submit</button>
+                    </div>
+               </div>
+          </div>
+     <script src="form.js"></script>
+     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+     </body>
+</html>
